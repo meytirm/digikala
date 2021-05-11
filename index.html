@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>دیجی‌کالا</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="./static/assets/images/favicon-96x96.png" type="image/x-icon">
+    <link rel="stylesheet" href="./static/vendor/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./static/assets/css/style.css" />
+
+  </head>
+
+  <body>
+    <!-- Start Header -->
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header__row">
+          <div class="header__right-side">
+            <div class="header__logo">
+              <a class="header__logo-link" href="#">
+                <img class="header__logo-img" src="./static/assets/images/logo.svg" alt="دیجیکالا">
+              </a>
+            </div>
+            <div class="header__search" onclick="event.stopPropagation();">
+              <div class="header__search-background ion ion-android-search">
+                <span class="header__search-reset ion ion-android-cancel"></span>
+                <input class="header__search-input" type="text" id="search" name="search"
+                  placeholder="جستجو در دیجی‌کالا ..." autocomplete="off">
+                <div class="header__search-result">
+                  <ul class="header__search-list">
+                    <li class="header__search-list-item">
+                      <a href="#">
+                        <span class="header__search-list-icon ion ion-android-search">
+                        </span>
+                        <span class="header__search-list-text">
+                          همه کالا‌های برند
+                        </span>
+                        <span class="header__search-list-input-bind">فیفا</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__left-side">
+            <div class="header__user">
+              <div class="header__user-login">
+                <div class="header__user-login-btn">
+                  <a class="header__user-login-btn-content ion ion-android-person" href="#">
+                    ورود به حساب کاربری
+                  </a>
+                </div>
+              </div>
+              <div class="header__user-profile">
+                <div class="header__user-profile-icon">
+                  <a class="header__user-profile-toggle-dropdown ion ion-android-person" href="#">
+
+                  </a>
+                </div>
+                <div class="header__user-profile-dropdown" onclick="event.stopPropagation();">
+                  <div class="header__profile-dropdown-account-container">
+                    <div class="header__profile-dropdown-account-user">
+                      <div class="header__profile-dropdown-account-user-avatar">
+                        <img src="./static/assets/images/avatar.png" alt="avatar">
+                      </div>
+                      <div class="header__profile-dropdown-account-user-info">
+                        <p class="header__profile-dropdown-account-user-name">مهدی رحمانی</p>
+                        <span class="header__profile-dropdown-account-user-link">مشاهده حساب
+                          کاربری</span>
+                      </div>
+                    </div>
+                    <div class="header__profile-dropdown-account-details">
+                      <div class="header__profile-dropdown-account-details-item">
+                        <a class="header__profile-dropdown-account-details-item-title" href="#">فعال سازی کیف پول</a>
+                      </div>
+                      <div class="header__profile-dropdown-account-details-item">
+                        <span class="header__profile-dropdown-account-details-item-title" href="#">دیجی‌کلاب</span>
+                        <span class="header__profile-dropdown-account-details-item-amount">
+                          <span class="header__profile-dropdown-account-details-item-amount-number">۰</span>
+                          امتیاز
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header__profile-dropdown-actions">
+                    <ul class="header__profile-dropdown-actions-list">
+                      <li class="header__profile-dropdown-action ion-ios-list-outline">
+                        <a href="#">سفارش های من</a>
+                      </li>
+                      <li class="header__profile-dropdown-action ion-ios-list-outline">
+                        <a href="#">سفارش های من</a>
+                      </li>
+                      <li class="header__profile-dropdown-action ion-ios-list-outline">
+                        <a href="#">سفارش های من</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header__cart">
+              <div class="header__cart-container">
+                <a class="header__cart-icon ion ion-android-cart" href="#">
+
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar__row">
+            <div class="navbar__category">
+              <ul class="navbar__category-list">
+                <li class="navbar__category-list-sub-highlight">
+                  <div></div>
+                </li>
+                <li class="navbar__category-item">
+                  <div class="navbar__category-main">
+                    دسته‌بندی کالا‌ها
+                  </div>
+                </li>
+                <li class="navbar__category-item">
+                  <a href="#" class="navbar__category-link ion ion-bag">سوپرمارکت</a>
+                </li>
+                <li class="navbar__category-item">
+                  <a href="#" class="navbar__category-link ion ion-cash">تخفیف‌ها و پیشنهادها</a>
+                </li>
+                <li class="navbar__category-item">
+                  <a href="#"
+                    class="navbar__category-link ion ion-android-checkmark-circle">دیجی‌کالای من</a>
+                </li>
+                <li class="navbar__category-item">
+                  <a href="#" class="navbar__category-link ion ion-ios-plus navbar__category-link--plus">دیجی‌پلاس</a>
+                </li>
+                <li class="navbar__category-item">
+                  <a href="#" class="navbar__category-link ion ion-android-cloud-circle">دیجی‌کلاب</a>
+                </li>
+                <li class="navbar__category-item">
+                  <a href="#" class="navbar__category-link ion-bonfire">دیجی‌پی</a>
+                </li>
+                <li class="navbar__category-item">
+                  <a href="#" class="navbar__category-link">سوالی دارید؟</a>
+                </li>
+                <li class="navbar__category-item">
+                  <a href="#" class="navbar__category-link">فروشنده شوید</a>
+                </li>
+              </ul>
+            </div>
+            <div class="navbar__choose-location modal">
+              <ul class="navbar__category-list">
+                <li class="navbar__category-item">
+                  <a href="#" class="navbar__category-link">
+                    <span>لطفا شهر و استان خود را انتخاب کنید</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End Header -->
+    <!-- Start Overlay -->
+    <div class="overlay"></div>
+    <!-- End Overlay -->
+    <!-- Start Main -->
+    <main>
+      <!-- Start Swiper -->
+      <section class="recommendation">
+        <div class="container">
+          <div class="headline">
+            <span>مهدی رحمانی</span>
+          </div>
+          <div class="swiper-container swiper3">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#" class="swiper-slide__img">
+                  <img src="./static/assets/images/takht.jpg" alt="تخت خوابت را مرتب کن">
+                </a>
+                <div class="swiper-slide__title">
+                  <a href=#>
+                    کتاب شازده کوچولو اثر آنتوان دوسنت اگزوپری انتشارات نگین ایران
+                  </a>
+                </div>
+                <div class="swiper-slide__price">
+                  <div class="swiper-slide__item">
+                    <div class="price">
+                      <div class="price__old-value">
+                        <del>۱۸,۰۰۰ </del>
+                        <span class="price__discount">٪۳۴</span>
+                      </div>
+                      <div class="price__value">
+                        ۱۱,۸۰۰
+                        <span class="price__currency">تومان</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="swiper-slide__img">
+                  <img src="./static/assets/images/fana.jpg" alt="خودت را به فنا نده">
+                </a>
+                <div class="swiper-slide__title">
+                  <a href=#>
+                    کتاب خودت را به فنا نده اثر گری جان بیشاپ
+                  </a>
+                </div>
+                <div class="swiper-slide__price">
+                  <div class="swiper-slide__item">
+                    <div class="price">
+                      <div class="price__old-value">
+                        <del>۱۹,۰۰۰ </del>
+                        <span class="price__discount">٪۲۵</span>
+                      </div>
+                      <div class="price__value">
+                        ۸,۲۰۰
+                        <span class="price__currency">تومان</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="swiper-slide__img">
+                  <img src="./static/assets/images/takht.jpg" alt="تخت خوابت را مرتب کن">
+                </a>
+                <div class="swiper-slide__title">
+                  <a href=#>
+                    کتاب شازده کوچولو اثر آنتوان دوسنت اگزوپری انتشارات نگین ایران
+                  </a>
+                </div>
+                <div class="swiper-slide__price">
+                  <div class="swiper-slide__item">
+                    <div class="price">
+                      <div class="price__old-value">
+                        <del>۱۸,۰۰۰ </del>
+                        <span class="price__discount">٪۳۴</span>
+                      </div>
+                      <div class="price__value">
+                        ۱۱,۸۰۰
+                        <span class="price__currency">تومان</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="swiper-slide__img">
+                  <img src="./static/assets/images/fana.jpg" alt="خودت را به فنا نده">
+                </a>
+                <div class="swiper-slide__title">
+                  <a href=#>
+                    کتاب خودت را به فنا نده اثر گری جان بیشاپ
+                  </a>
+                </div>
+                <div class="swiper-slide__price">
+                  <div class="swiper-slide__item">
+                    <div class="price">
+                      <div class="price__old-value">
+                        <del>۱۹,۰۰۰ </del>
+                        <span class="price__discount">٪۲۵</span>
+                      </div>
+                      <div class="price__value">
+                        ۸,۲۰۰
+                        <span class="price__currency">تومان</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="swiper-slide__img">
+                  <img src="./static/assets/images/takht.jpg" alt="تخت خوابت را مرتب کن">
+                </a>
+                <div class="swiper-slide__title">
+                  <a href=#>
+                    کتاب شازده کوچولو اثر آنتوان دوسنت اگزوپری انتشارات نگین ایران
+                  </a>
+                </div>
+                <div class="swiper-slide__price">
+                  <div class="swiper-slide__item">
+                    <div class="price">
+                      <div class="price__old-value">
+                        <del>۱۸,۰۰۰ </del>
+                        <span class="price__discount">٪۳۴</span>
+                      </div>
+                      <div class="price__value">
+                        ۱۱,۸۰۰
+                        <span class="price__currency">تومان</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="swiper-slide__img">
+                  <img src="./static/assets/images/fana.jpg" alt="خودت را به فنا نده">
+                </a>
+                <div class="swiper-slide__title">
+                  <a href=#>
+                    کتاب خودت را به فنا نده اثر گری جان بیشاپ
+                  </a>
+                </div>
+                <div class="swiper-slide__price">
+                  <div class="swiper-slide__item">
+                    <div class="price">
+                      <div class="price__old-value">
+                        <del>۱۹,۰۰۰ </del>
+                        <span class="price__discount">٪۲۵</span>
+                      </div>
+                      <div class="price__value">
+                        ۸,۲۰۰
+                        <span class="price__currency">تومان</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="swiper-slide__img">
+                  <img src="./static/assets/images/takht.jpg" alt="تخت خوابت را مرتب کن">
+                </a>
+                <div class="swiper-slide__title">
+                  <a href=#>
+                    کتاب شازده کوچولو اثر آنتوان دوسنت اگزوپری انتشارات نگین ایران
+                  </a>
+                </div>
+                <div class="swiper-slide__price">
+                  <div class="swiper-slide__item">
+                    <div class="price">
+                      <div class="price__old-value">
+                        <del>۱۸,۰۰۰ </del>
+                        <span class="price__discount">٪۳۴</span>
+                      </div>
+                      <div class="price__value">
+                        ۱۱,۸۰۰
+                        <span class="price__currency">تومان</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <a href="#" class="swiper-slide__img">
+                  <img src="./static/assets/images/fana.jpg" alt="خودت را به فنا نده">
+                </a>
+                <div class="swiper-slide__title">
+                  <a href=#>
+                    کتاب خودت را به فنا نده اثر گری جان بیشاپ
+                  </a>
+                </div>
+                <div class="swiper-slide__price">
+                  <div class="swiper-slide__item">
+                    <div class="price">
+                      <div class="price__old-value">
+                        <del>۱۹,۰۰۰ </del>
+                        <span class="price__discount">٪۲۵</span>
+                      </div>
+                      <div class="price__value">
+                        ۸,۲۰۰
+                        <span class="price__currency">تومان</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next swiper3-next"></div>
+          <div class="swiper-button-prev swiper3-prev"></div>
+      </section>
+      <!-- End Swiper -->
+    </main>
+    <!-- End Swiper -->
+
+
+    </div>
+    <script src="./static/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="./static/assets/js/script.js"></script>
+  </body>
+
+</html>

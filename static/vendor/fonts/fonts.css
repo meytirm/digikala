@@ -1,0 +1,14 @@
+@font-face {
+     font-family: IRYEKAN;
+     src: url('./IRYEKAN/IRYEKAN.woff') format('woff'),
+          url('./IRYEKAN/IRYEKAN.TTF') format('TTF');
+     font-weight: normal;
+     font-style: normal;
+ }
+ @font-face {
+     font-family: IRYEKANBOLD;
+     src: url('./IRYEKANBOLD/IRYEKANBOLD.woff') format('woff'),
+          url('./IRYEKANBOLD/IRYEKANBOLD.TTF') format('TTF');
+     font-weight: bold;
+     font-style: normal;
+ }
