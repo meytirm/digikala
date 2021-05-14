@@ -128,3 +128,23 @@ function toggleNavbar(event) {
 document.addEventListener("scroll", toggleNavbar);
 
 // end navbar
+
+// start footer
+const readmoreBtn = document.querySelector('.footer__seo-content-readmore-btn');
+const moreContent = document.querySelector('.footer__seo-readmore')
+let readmore = false;
+
+function readmoreContent() {
+  if (readmore) {
+    readmoreBtn.textContent = 'بیشتر';
+    moreContent.style.display = "none";
+    readmore = false;
+  } else {
+    readmoreBtn.textContent = 'بستن';
+    moreContent.style.display = "inline";
+    readmore = true;
+  }
+}
+
+readmoreBtn.addEventListener('click', readmoreContent)
+// end footer
